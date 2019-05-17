@@ -31,6 +31,6 @@ urlpatterns = [
     url(r'^', include('payment.urls', namespace='payment')),  # 支付
     url(r'^', include('example.urls', namespace='example')),  # 很笨的机器人
     url(r'^', include('github.urls', namespace='github')),  # github第三登录
-
+    url(r'^', include('sina.urls', namespace='sina')),  # 微博第三方登录
 
 ]

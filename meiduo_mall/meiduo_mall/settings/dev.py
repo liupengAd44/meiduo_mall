@@ -332,3 +332,15 @@ GITHUB_CLIENTSECRET = '81470e53a820ef9cce4592c05f41f0ed7888bdd1'
 GITHUB_CALLBACK = 'http://www.meiduo.site:8000'
 
 
+
+# 微博第三方登录
+# App Key：2946012037
+# App Secret：ab0aa938b841b1c306d4f58e5878d43f
+# http://www.meiduo.site/weibo_callback
+SINA_AUTHORIZE_URL = 'https://api.weibo.com/oauth2/access_token'
+SINA_APP_KEY = '2946012037'
+SINA_SECRET = 'ab0aa938b841b1c306d4f58e5878d43f'
+SINA_CALLBACK = 'http://www.meiduo.site/weibo_callback/'
+
+
+
