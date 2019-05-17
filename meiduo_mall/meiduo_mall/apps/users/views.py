@@ -17,6 +17,8 @@ import json
 from .utils import EmailSerializer
 from goods.models import SKU
 from orders.models import OrderGoods,OrderInfo
+
+from meiduo_mall.meiduo_mall.apps.verifications.views import VerificationCodeView
 """
 定义的扩展父类名称通常以Mixin结尾
 使用面向对象多继承的特性，可以通过定义父类（作为扩展类），
@@ -612,3 +614,13 @@ class UserOrderInfoView(LoginRequiredView):
         return render(request, 'user_center_order.html', context)
 
 
+class FindPassView(View):
+    """提供找回密码界面"""
+    def get(self, request):
+        return render(request, 'find_password.html')
+
+
+
+class FindPasswordView(VerificationCodeView):
+    """找回密码功能实现"""
+    pass

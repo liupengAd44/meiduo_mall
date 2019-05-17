@@ -122,9 +122,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': '127.0.0.1',
         'PORT': 3306,
-        'USER': 'root',
-        'PASSWORD': 'liao',
-        'NAME': 'meiduo',  # 数据库名字
+        'USER': 'dubin',
+        'PASSWORD': '1991',
+        'NAME': 'meiduo_mall',  # 数据库名字
         # 'OPTIONS': {
         #  'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         # },
@@ -289,7 +289,7 @@ EMAIL_VERIFY_URL = 'http://www.meiduo.site:8000/emails/verification/'
 
 # 修改Django的文件存储类
 DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.fast_storage.FastDFSStorage'
-FDFS_BASE_URL = 'http://192.168.47.156:8888/'  # FastDFS中sotrage(nginx) ip和端口
+FDFS_BASE_URL = 'http://127.0.0.1:8888/'  # FastDFS中sotrage(nginx) ip和端口
 
 
 # Haystack
@@ -297,7 +297,7 @@ FDFS_BASE_URL = 'http://192.168.47.156:8888/'  # FastDFS中sotrage(nginx) ip和�
 HAYSTACK_CONNECTIONS = {
     'default': {
         'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
-        'URL': 'http://192.168.47.156:9200/', # Elasticsearch服务器ip地址，端口号固定为9200
+        'URL': 'http://127.0.0.1:9200/', # Elasticsearch服务器ip地址，端口号固定为9200
         'INDEX_NAME': 'meiduo_mall', # Elasticsearch建立的索引库的名称
     },
 }
